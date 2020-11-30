@@ -10,6 +10,9 @@ class TestSong(unittest.TestCase):
     def test_song_has_title(self):
         self.assertEqual("Folsom Prison Blues", self.song1.title)
 
+    def test_song_has_artist(self):
+        self.assertEqual("Johnny Cash", self.song1.artist)
+
 
 
        
