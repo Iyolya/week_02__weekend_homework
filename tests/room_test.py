@@ -22,5 +22,8 @@ class TestRoom(unittest.TestCase):
     def test_room_has_capacity(self):
         self.assertEqual(10, self.room1.capacity)
 
+    def test_number_of_guests(self):  
+        self.assertEqual(0, self.room1.number_of_guests())  
+
 
 

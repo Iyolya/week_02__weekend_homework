@@ -4,4 +4,8 @@ class Room:
         self.name = name
         self.capacity = capacity
         self.guests = []
-        self. songs = []
+        self.songs = []
+
+
+    def number_of_guests(self):
+        return len(self.guests)
