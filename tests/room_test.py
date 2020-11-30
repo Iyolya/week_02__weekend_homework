@@ -33,6 +33,11 @@ class TestRoom(unittest.TestCase):
         self.room1.check_out_guests(self.guest1)
         self.assertEqual(0, self.room1.number_of_guests())
 
+    def test_song_added(self):
+        self.room1.add_song(self.song1)
+        self.assertEqual(1, self.room1.number_of_songs())
+
+
 
 
 
