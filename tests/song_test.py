@@ -13,6 +13,9 @@ class TestSong(unittest.TestCase):
     def test_song_has_artist(self):
         self.assertEqual("Johnny Cash", self.song1.artist)
 
+    def test_song_has_genre(self):
+        self.assertEqual("Rock and roll", self.song1.genre)
+
 
 
        
