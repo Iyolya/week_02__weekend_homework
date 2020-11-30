@@ -12,3 +12,8 @@ class Room:
 
     def check_in_guests(self, guest):
         self.guests.append(guest)
+
+    def check_out_guests(self, guest):
+        for someone in self.guests:
+            if someone == guest:
+                self.guests.remove(guest)

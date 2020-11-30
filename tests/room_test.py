@@ -29,5 +29,10 @@ class TestRoom(unittest.TestCase):
         self.room1.check_in_guests(self.guest1)
         self.assertEqual(1, self.room1.number_of_guests())
 
+    def test_guest_checked_out(self):
+        self.room1.check_out_guests(self.guest1)
+        self.assertEqual(0, self.room1.number_of_guests())
+
+
 
 
