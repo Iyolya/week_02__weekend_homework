@@ -19,8 +19,8 @@ class TestRoom(unittest.TestCase):
     def test_room_has_name(self):
         self.assertEqual("Stars Hollow", self.room1.name)
 
-    # def test_room_has_capacity(self):
-    #     self.assertEqual(10, self.room1.capacity)
+    def test_room_has_capacity(self):
+        self.assertEqual(10, self.room1.capacity)
 
 
 
